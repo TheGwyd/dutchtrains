@@ -1,0 +1,33 @@
+Patchlist Dutch Trains
+
+-Necessary additions:
+  -Yet to be added rolling stock:
+    -FLIRT
+    -SNG
+    -ICNG
+    -Eurostar
+  -Liveries that need to be updated:
+    -VIRM renewal livery
+    -Eurosprinter black livery (I mean, I mostly see those riding around)
+    -TRAXX Intercity Direct livery
+
+-General approach regarding existing rolling stock:
+  -Evaluate all rolling stock one by one and correct errors
+  -Some rolling stock need updates to better fit the passage of time (Think of the renewals of the ICM)
+  -Some coaches might need to be shortened a little
+  
+-The big addition:
+  -Adding some NewGRF options to provide a choice for the player:
+    -(Default) Just the trainset the way it currently is implemented, with a few tweaks
+    -Unlock all types of all coaches, allowing to pick between 1st, 2nd and 3rd class coaches
+    -Unlock all subcoaches of DMU's and EMU's, allowing custom EMU's and DMU's
+    -A switch to enable/disable EMU/DMU altogether
+    -Full blown madness, providing everything that can be sensibly distinguished in OpenTTD
+  
+I'm gonna assume that the full length of a OpenTTD coach is the standard 26400 mm, since this is the longest I could find. For example, Plan D carriages would then be shortened to a length of 7. This does however raise the question whether engines should be shortened. I would say no, since the scale of OpenTTD gets really distorted at that point. A little tweak is therefore possible, but shortening the engines would compromise to much of the engines. It's up for debate nonetheless. Right now I'm noticing there might be support for longer sprites. I will research this, and put it up for discussion if it's worth it :D
+
+I have been looking into the SBB set a little, and I've noticed that reversing a train will not literally reverse the train visually, but just it's direction. That would be an awesome feature!
+
+I came up with this last idea (well, probably someone came up with it before me, but I'm just gonna do it!) after I noticed that the capacities of coaches are skewed at times, only providing one type of class per carriage (which sometimes results in unuseful coaches, a very sad result, since I tended to avoid some carriages because of it). However, by providing everything, an adept player can make their dream train come true! (Although I wouldn't want to see the love-child of some EMU's :P )
+
+

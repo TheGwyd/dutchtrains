@@ -1,0 +1,234 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_IRMVI_original_purchase, "gfx/purchase/emu/VIRM_VI.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_emu_IRMVI_renewal_purchase, "gfx/purchase/emu/VIRM_VI_renewal.png") {
+	template_purchase(0, 0)
+}
+
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_purchase, current_year) {
+    0..2016: spriteset_emu_IRMVI_original_purchase;
+    spriteset_emu_IRMVI_renewal_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+//IRM
+spriteset(spriteset_emu_IRM_front_pantoup, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_IRM_front_pantodown, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_IRM_front_nopanto, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_emu_IRM_back_pantoup, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_IRM_back_pantodown, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_emu_IRM_back_nopanto, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_emu_IRM_middle_panto, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_emu_IRM_middle_nopanto, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 256)
+}
+
+//olypmic
+spriteset(spriteset_emu_IRM_olympic_front_pantoup, "gfx/emu/IRM_olympic.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_IRM_olympic_front_pantodown, "gfx/emu/IRM_olympic.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_IRM_olympic_front_nopanto, "gfx/emu/IRM_olympic.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_emu_IRM_olympic_back_pantoup, "gfx/emu/IRM_olympic.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_IRM_olympic_back_pantodown, "gfx/emu/IRM_olympic.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_emu_IRM_olympic_back_nopanto, "gfx/emu/IRM_olympic.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_emu_IRM_olympic_middle_panto, "gfx/emu/IRM_olympic.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_emu_IRM_olympic_middle_nopanto, "gfx/emu/IRM_olympic.png") {
+	template_2cc_88(1, 256)
+}
+
+//ovchip
+spriteset(spriteset_emu_IRM_ovchip_front_pantoup, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_IRM_ovchip_front_pantodown, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_IRM_ovchip_front_nopanto, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_emu_IRM_ovchip_back_pantoup, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_IRM_ovchip_back_pantodown, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_emu_IRM_ovchip_back_nopanto, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_emu_IRM_ovchip_middle_panto, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_emu_IRM_ovchip_middle_nopanto, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 256)
+}
+
+//renewal
+spriteset(spriteset_emu_IRM_renewal_front_pantoup, "gfx/emu/IRM_renewal.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_IRM_renewal_front_pantodown, "gfx/emu/IRM_renewal.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_IRM_renewal_front_nopanto, "gfx/emu/IRM_renewal.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_emu_IRM_renewal_back_pantoup, "gfx/emu/IRM_renewal.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_IRM_renewal_back_pantodown, "gfx/emu/IRM_renewal.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_emu_IRM_renewal_back_nopanto, "gfx/emu/IRM_renewal.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_emu_IRM_renewal_middle_panto, "gfx/emu/IRM_renewal.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_emu_IRM_renewal_middle_nopanto, "gfx/emu/IRM_renewal.png") {
+	template_2cc_88(1, 256)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_position_1, (position_in_vehid_chain % 6)) {
+	0: spriteset_emu_IRM_front_nopanto;
+    2: spriteset_emu_IRM_middle_panto;
+	5: spriteset_emu_IRM_back_nopanto;
+    spriteset_emu_IRM_middle_nopanto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_position_2, (position_in_vehid_chain % 6)) {
+	0: spriteset_emu_IRM_front_nopanto;
+    3: spriteset_emu_IRM_middle_panto;
+	5: spriteset_emu_IRM_back_nopanto;
+    spriteset_emu_IRM_middle_nopanto;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMVI_original_position) {
+	1: switch_emu_IRMVI_position_1;
+	1: switch_emu_IRMVI_position_2;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_renewal_position_1, (position_in_vehid_chain % 6)) {
+	0: spriteset_emu_IRM_renewal_front_nopanto;
+    2: spriteset_emu_IRM_renewal_middle_panto;
+	5: spriteset_emu_IRM_renewal_back_nopanto;
+    spriteset_emu_IRM_renewal_middle_nopanto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_renewal_position_2, (position_in_vehid_chain % 6)) {
+	0: spriteset_emu_IRM_renewal_front_nopanto;
+    3: spriteset_emu_IRM_renewal_middle_panto;
+	5: spriteset_emu_IRM_renewal_back_nopanto;
+    spriteset_emu_IRM_renewal_middle_nopanto;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMVI_renewal_position) {
+	1: switch_emu_IRMVI_renewal_position_1;
+	1: switch_emu_IRMVI_renewal_position_2;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_IRMVI_autolivery, date_of_last_service) {
+	0..date(2017,2,1): switch_emu_IRMVI_original_position;
+    switch_emu_IRMVI_renewal_position;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_purchaselivery, build_year) {
+	0..2016: switch_emu_IRMVI_original_position;
+    switch_emu_IRMVI_renewal_position;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_livery, cargo_subtype) {
+	1: switch_emu_IRMVI_purchaselivery;
+    2: switch_emu_IRMVI_original_position;
+    3: switch_emu_IRMVI_renewal_position;
+    //4: switch_emu_ICM4_olympic_position;
+    switch_emu_IRMVI_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_original);
+    3: return string(str_cargo_subtype_renewal);
+    return CB_RESULT_NO_TEXT;
+    
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_articulated, extra_callback_info1) {
+    1..5: return item_emu_IRMVI;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_visual_effect_and_powered, (position_in_vehid_chain % 6)) {
+    2: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_capacity_build_year, build_year) {
+    0..2016: return 100;
+    return 103;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_capacity_current_year, current_year) {
+    0..2016: return 100;
+    return 103;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_capacity, cargo_subtype) {
+    0: switch_emu_IRMVI_capacity_current_year;
+	1: switch_emu_IRMVI_capacity_build_year;
+    2: return 100;
+    3: return 103;
+}

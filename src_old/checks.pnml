@@ -6,38 +6,9 @@
  *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-/*
-* GRF HEADER
-*/
+//some checks
 
-//define grf
-#include "src/header.pnml"
-//checks for other sets
-#include "src/checks.pnml"
-#include "src/trackcheck.pnml"
-//disable original vehicles
-#include "src/disableorigvehs.pnml"
-//include sprite templates
-#include "src/templates.pnml"
-//give vehicle a specific ID
-#include "src/vehicleids.pnml"
-//cargo translation table
-#include "src/cargotable.pnml"
-//cargo refit definitions
-#include "src/cargorefits.pnml"
-//railtype translation table
-#include "src/railtypetable.pnml"
-//recolour sprites for cargo
-#include "src/recoloursprites.pnml"
-
-#include "src/steam/Arend_graphics.pnml"
-
-if (param_subvehicle == 1) {
-
-
-  #include "src/steam/Arend_item.pnml"
-  
+//NuTracks: this set must be loaded after NuTracks to work with NuTracks
+if (grf_future_status("\44\4A\54\01") && !grf_order_behind("\44\4A\54\01")) {
+    error(WARNING, MUST_LOAD_AFTER, "NuTracks");
 }
-
-#include "src/steam/HSM1_graphics.pnml"
-#include "src/steam/HSM1_item.pnml"

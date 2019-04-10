@@ -14,15 +14,6 @@ grf {
     url:    string(STR_GRF_URL);
 	version:		REPO_REVISION;
 	min_compatible_version:	650;
-	  param {
-	      param_subvehicle {
-	          type:   bool;
-	          name:   string(STR_PARAM_SUBVEHICLE);
-	          desc:   string(STR_PARAM_SUBVEHICLE_DESC);
-	          def_value: 0;
-	      }
-	      
-	  }
     param {
         param_vehicle_names {
             type:   bool;

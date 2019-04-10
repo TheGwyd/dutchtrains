@@ -10,6 +10,9 @@ STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
 STR_PARAM_VEHICLE_NAMES             :Use English vehicle nicknames
 STR_PARAM_VEHICLE_NAMES_DESC        :Enable this to have the vehicle nicknames translated to English. When disabled, the vehicle nicknames will be in Dutch.
 
+STR_PARAM_SUBVEHICLE                :Enable individual carriages
+STR_PARAM_SUBVEHICLE_DESC           :Enable this for depot clutter.
+
 STR_PARAM_DISABLE_ORIGINAL          :Keep original engines and wagons
 STR_PARAM_DISABLE_ORIGINAL_DESC     :By default this set disables all original rail, monorail and maglev enignes and wagons. You can use this parameter to keep any combination of original rail, monorail and/or maglev. However, if a different NewGRF disables the original vehicles, then this setting can not re-enable them.
 STR_PARAM_DISABLE_ORIGINAL_000      :none (default)
@@ -133,6 +136,7 @@ str_cargo_subtype_freedom           : > Freedom livery
 str_cargo_subtype_fyra              : > Fyra livery
 str_cargo_subtype_fyra_red          : > Fyra (red) livery
 str_cargo_subtype_fyra_white        : > Fyra (white) livery
+str_cargo_subtype_icd               : > Intercity Direct livery
 str_cargo_subtype_groningen         : > Groningen Mendini livery
 str_cargo_subtype_ICE				: > ICE livery
 str_cargo_subtype_icplus            : > IC+ livery (May 28, 1995 - June 2002)
@@ -150,6 +154,7 @@ str_cargo_subtype_ns_ic_cab         : > NS InterCity livery (cab control)
 str_cargo_subtype_olympic           : > Olympic livery
 str_cargo_subtype_original          : > Original livery
 str_cargo_subtype_ovchip            : > OV Chipkaart livery
+str_cargo_subtype_virmrenewal           : > Gemoderniseerde kleurstelling
 str_cargo_subtype_overnightexpress  : > Overnight Express livery
 str_cargo_subtype_prototype         : > Prototype livery
 str_cargo_subtype_randstadrail      : > RandstadRail livery
@@ -324,6 +329,9 @@ str_electric_TRAXXF140MS2   :NS Hispeed 186 (Electric)
 str_electric_ES64F4     :EuroSprinter ES64F4 (Electric)
 str_electric_gen9_HS001 :HS-1 (Electric)
 str_electric_gen9_HS002 :HS-2 (Electric)
+
+str_electric_DDZIV      :DDZ-IV (Electric)
+str_electric_DDZVI      :DDZ-VI (Electric)
 
 #dmu
 str_dmu_omC901          :omC 901-916 "Ome Cees" (Diesel)

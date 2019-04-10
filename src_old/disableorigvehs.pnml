@@ -6,38 +6,19 @@
  *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-/*
-* GRF HEADER
-*/
+//disable original vehicles depending on parameter
 
-//define grf
-#include "src/header.pnml"
-//checks for other sets
-#include "src/checks.pnml"
-#include "src/trackcheck.pnml"
-//disable original vehicles
-#include "src/disableorigvehs.pnml"
-//include sprite templates
-#include "src/templates.pnml"
-//give vehicle a specific ID
-#include "src/vehicleids.pnml"
-//cargo translation table
-#include "src/cargotable.pnml"
-//cargo refit definitions
-#include "src/cargorefits.pnml"
-//railtype translation table
-#include "src/railtypetable.pnml"
-//recolour sprites for cargo
-#include "src/recoloursprites.pnml"
-
-#include "src/steam/Arend_graphics.pnml"
-
-if (param_subvehicle == 1) {
-
-
-  #include "src/steam/Arend_item.pnml"
-  
+if (!hasbit(param_disable_original, 0) ) {
+    //disable rail vehicles
+    disable_item(FEAT_TRAINS, 0, 53);
 }
 
-#include "src/steam/HSM1_graphics.pnml"
-#include "src/steam/HSM1_item.pnml"
+if (!hasbit(param_disable_original, 1) ) {
+    //disable monorail vehicles
+    disable_item(FEAT_TRAINS, 54, 83);
+}
+
+if (!hasbit(param_disable_original, 2) ) {
+    //disable maglev vehicles
+    disable_item(FEAT_TRAINS, 84, 115);
+}

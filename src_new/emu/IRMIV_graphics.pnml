@@ -1,0 +1,226 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_IRMIV_irm_purchase, "gfx/purchase/emu/IRM.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_IRMIV_virm_original_purchase, "gfx/purchase/emu/VIRM_IV.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_emu_IRMIV_virm_renewal_purchase, "gfx/purchase/emu/VIRM_IV_renewal.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_purchase, current_year) {
+    0..2001: spriteset_emu_IRMIV_irm_purchase;
+    2002..2016: spriteset_emu_IRMIV_virm_original_purchase;
+    spriteset_emu_IRMIV_virm_renewal_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+//irm livery
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_position_1, (position_in_vehid_chain % 4)) {
+	0: spriteset_emu_IRM_front_pantoup;
+	3: spriteset_emu_IRM_back_pantodown;
+    spriteset_emu_IRM_middle_nopanto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_position_2, (position_in_vehid_chain % 4)) {
+	0: spriteset_emu_IRM_front_pantodown;
+	3: spriteset_emu_IRM_back_pantoup;
+    spriteset_emu_IRM_middle_nopanto;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_irm_livery) {
+	1: switch_emu_IRMIV_position_1;
+	1: switch_emu_IRMIV_position_2;
+}
+
+//virm livery
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_virm_position_1, (position_in_vehid_chain % 4)) {
+	0: spriteset_emu_IRM_front_nopanto;
+    1: spriteset_emu_IRM_middle_panto;
+	3: spriteset_emu_IRM_back_nopanto;
+    spriteset_emu_IRM_middle_nopanto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_virm_position_2, (position_in_vehid_chain % 4)) {
+	0: spriteset_emu_IRM_front_nopanto;
+    2: spriteset_emu_IRM_middle_panto;
+	3: spriteset_emu_IRM_back_nopanto;
+    spriteset_emu_IRM_middle_nopanto;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_virm_livery) {
+	1: switch_emu_IRMIV_virm_position_1;
+	1: switch_emu_IRMIV_virm_position_2;
+}
+
+//olympic livery
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_olympic_position_1, (position_in_vehid_chain % 4)) {
+	0: spriteset_emu_IRM_olympic_front_nopanto;
+    1: spriteset_emu_IRM_olympic_middle_panto;
+	3: spriteset_emu_IRM_olympic_back_nopanto;
+    spriteset_emu_IRM_olympic_middle_nopanto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_olympic_position_2, (position_in_vehid_chain % 4)) {
+	0: spriteset_emu_IRM_olympic_front_nopanto;
+    2: spriteset_emu_IRM_olympic_middle_panto;
+	3: spriteset_emu_IRM_olympic_back_nopanto;
+    spriteset_emu_IRM_olympic_middle_nopanto;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_olympic_livery) {
+	1: switch_emu_IRMIV_olympic_position_1;
+	1: switch_emu_IRMIV_olympic_position_2;
+}
+
+//ovchip livery
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_ovchip_position_1, (position_in_vehid_chain % 4)) {
+	0: spriteset_emu_IRM_ovchip_front_nopanto;
+    1: spriteset_emu_IRM_ovchip_middle_panto;
+	3: spriteset_emu_IRM_ovchip_back_nopanto;
+    spriteset_emu_IRM_ovchip_middle_nopanto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_ovchip_position_2, (position_in_vehid_chain % 4)) {
+	0: spriteset_emu_IRM_ovchip_front_nopanto;
+    2: spriteset_emu_IRM_ovchip_middle_panto;
+	3: spriteset_emu_IRM_ovchip_back_nopanto;
+    spriteset_emu_IRM_ovchip_middle_nopanto;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_ovchip_livery) {
+	1: switch_emu_IRMIV_ovchip_position_1;
+	1: switch_emu_IRMIV_ovchip_position_2;
+}
+
+//renewal livery
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_renewal_position_1, (position_in_vehid_chain % 4)) {
+	0: spriteset_emu_IRM_renewal_front_nopanto;
+    1: spriteset_emu_IRM_renewal_middle_panto;
+	3: spriteset_emu_IRM_renewal_back_nopanto;
+    spriteset_emu_IRM_renewal_middle_nopanto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_renewal_position_2, (position_in_vehid_chain % 4)) {
+	0: spriteset_emu_IRM_renewal_front_nopanto;
+    2: spriteset_emu_IRM_renewal_middle_panto;
+	3: spriteset_emu_IRM_renewal_back_nopanto;
+    spriteset_emu_IRM_renewal_middle_nopanto;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_renewal_livery) {
+	1: switch_emu_IRMIV_renewal_position_1;
+	1: switch_emu_IRMIV_renewal_position_2;
+}
+
+/*
+* LIVERY SELECTION
+*/
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_randomauto_ic_olympic_ovchip) {
+	2:  switch_emu_IRMIV_ovchip_livery;
+    43: switch_emu_IRMIV_virm_livery;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_purchase_ic_olympic_ovchip, date_of_last_service) {
+    date(2010,1,1)..date(2011,12,31): switch_emu_IRMIV_randomauto_ic_olympic_ovchip;
+    switch_emu_IRMIV_virm_livery;
+}
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_randomauto_ic_olympic) {
+	2:  switch_emu_IRMIV_olympic_livery;
+    45: switch_emu_IRMIV_purchase_ic_olympic_ovchip;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_autolivery, date_of_last_service) {
+    0..date(2001,12,31): switch_emu_IRMIV_irm_livery;
+    date(2002,1,3)..date(2004,12,31): switch_emu_IRMIV_virm_livery;
+    date(2005,1,1)..date(2016,6,30): switch_emu_IRMIV_randomauto_ic_olympic;
+    switch_emu_IRMIV_renewal_livery;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_randompurchase_ic_olympic_ovchip) {
+	2:  switch_emu_IRMIV_olympic_livery;
+    2:  switch_emu_IRMIV_ovchip_livery;
+    43: switch_emu_IRMIV_virm_livery;
+}
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_randompurchase_ic_olympic) {
+	2:  switch_emu_IRMIV_olympic_livery;
+    45: switch_emu_IRMIV_virm_livery;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_purchaselivery, build_year) {
+    0..2001: switch_emu_IRMIV_irm_livery;
+    2002..2004: switch_emu_IRMIV_virm_livery;
+    2010..2011: switch_emu_IRMIV_randompurchase_ic_olympic_ovchip;
+    switch_emu_IRMIV_randompurchase_ic_olympic;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_ic_livery, date_of_last_service) {
+    0..date(2001,12,31): switch_emu_IRMIV_irm_livery;
+    date(2002,1,1)..date(2016,6,30): switch_emu_IRMIV_virm_livery;
+    switch_emu_IRMIV_renewal_livery;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_livery, cargo_subtype) {
+	1: switch_emu_IRMIV_purchaselivery;
+    2: switch_emu_IRMIV_ic_livery;
+    3: switch_emu_IRMIV_olympic_livery;
+    4: switch_emu_IRMIV_ovchip_livery;
+    5: switch_emu_IRMIV_renewal_livery;
+    switch_emu_IRMIV_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_yellow_blue_ic);
+    3: return string(str_cargo_subtype_olympic);
+    4: return string(str_cargo_subtype_ovchip);
+    5: return string(str_cargo_subtype_renewal);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_articulated, extra_callback_info1) {
+    1..3: return item_emu_IRMIV;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* VEHICLE PROPERTY CALLBACKS
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_capacity, build_year) {
+    0..2001: return 97;
+    return 101;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_weight, build_year) {
+    0..2001: return 234;
+    return 237;
+}
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_visual_effect_and_powered, (position_in_vehid_chain % 4)) {
+    1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}

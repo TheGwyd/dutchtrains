@@ -223,5 +223,3 @@ item(FEAT_TRAINS, item_emu_V200E6, 328) {}
 item(FEAT_TRAINS, item_emu_V200E8, 329) {}
 item(FEAT_TRAINS, item_emu_CargoDD, 330) {}
 item(FEAT_TRAINS, item_wagons_Tads_selfdischarger, 331) {}
-item(FEAT_TRAINS, item_electric_DDZIV, 332) {}
-item(FEAT_TRAINS, item_electric_DDZVI, 333) {}

@@ -1,0 +1,44 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+//railtype translation table
+
+railtypetable {
+    unelectrified_A: [SAAN, RAIL],
+    unelectrified_B: [SABN, RAIL],
+    unelectrified_C: [SACN, RAIL],
+    unelectrified_D: [SADN, RAIL],
+    unelectrified_E: [SAEN, RAIL],
+    DC_B: [SABd, SABD, SABE, ELRL],
+    DC_C: [SACd, SACD, SACE, ELRL],
+    dual_B: [SABE, SABA, ELRL],
+    dual_C: [SACE, SACA, ELRL],
+    dual_D: [SADE, SADA, ELRL],
+    dual_E: [SAEE, SAEA, ELRL],
+    metro_B: [SAB3, MTRO, "3RDR"],
+    SAAA,
+    SABA,
+    SACA,
+    SADA,
+    SAEA,
+    SBAA,
+    SBBA,
+    SBCA,
+    SBDA,
+    SBEA,
+    SAAa,
+    SABa,
+    SACa,
+    SADa,
+    SAEa,
+    SBAa,
+    SBBa,
+    SBCa,
+    SBDa,
+    SBEa
+}

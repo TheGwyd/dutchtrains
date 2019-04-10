@@ -1,0 +1,6 @@
+VERSION        :noRev
+VERSION_STRING :noRev
+TITLE          :Dutch Trainset noRev
+FILENAME       :dutchtrains.grf
+REPO_HASH      :
+NEWGRF_VERSION :0

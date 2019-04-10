@@ -1,0 +1,10 @@
+Changelog
+
+- Added VIRMm livery to VIRM-IV and VIRM-VI
+- Added NID or DDZ as IV and VI EMU variants, along with fitting capacities
+- Fixed capacity VIRM-IV (From 102 to 101)
+- Fixed capacity VIRM-VI (Original livery retains 100, renewal livery became 103)
+- Fixed ICM capacities (increased to 76 from 62 and 63 respectively)
+- Added Intercity Direct livery for TRAXXF140MS2
+- Fixed Plan W capacity
+- Fixed TRAXX livery dates
