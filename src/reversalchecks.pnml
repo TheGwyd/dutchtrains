@@ -1,0 +1,2 @@
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_loc_car, loc_id, car_id, count_veh_id(loc_id)+count_veh_id(car_id)==num_vehs_in_consist) {return;}
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_ddar, (vehicle_type_id == 179||vehicle_type_id == 210||vehicle_type_id == 207)&&(count_veh_id(179)+count_veh_id(210)+count_veh_id(207)+count_veh_id(208)==num_vehs_in_consist)) {return;}
