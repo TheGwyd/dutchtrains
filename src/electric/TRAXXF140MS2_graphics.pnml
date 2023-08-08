@@ -64,12 +64,30 @@ switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_purchaselivery, build_yea
     switch_electric_TRAXXF140MS2_random_fyra;
 }
 
-switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_for_electric_TRAXXF140MS2_livery, cargo_subtype) {
 	1: switch_electric_TRAXXF140MS2_purchaselivery;
     2: spriteset_electric_TRAXXF140MS2_green;
     3: spriteset_electric_TRAXXF140MS2_red;
     4: spriteset_electric_TRAXXF140MS2_silver;
     switch_electric_TRAXXF140MS2_randomlivery;
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_electric_TRAXXF140MS2_randomlivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]){
+	0..2010: spriteset_electric_TRAXXF140MS2_green;
+    switch_electric_TRAXXF140MS2_random_all;
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_electric_TRAXXF140MS2_purchaselivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]){
+	0..2010: spriteset_electric_TRAXXF140MS2_green;
+    switch_electric_TRAXXF140MS2_random_fyra;
+}
+
+switch(FEAT_TRAINS, SELF, switch_rev_electric_TRAXXF140MS2_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+	1: switch_REV_electric_TRAXXF140MS2_purchaselivery;
+    2: spriteset_electric_TRAXXF140MS2_green;
+    3: spriteset_electric_TRAXXF140MS2_red;
+    4: spriteset_electric_TRAXXF140MS2_silver;
+    switch_REV_electric_TRAXXF140MS2_randomlivery;
 }
 
 // CARGO SUBTYPE CALLBACK
