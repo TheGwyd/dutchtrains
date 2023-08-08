@@ -72,14 +72,26 @@ switch(FEAT_TRAINS, SELF, switch_for_electric_TRAXXF140MS2_livery, cargo_subtype
     switch_electric_TRAXXF140MS2_randomlivery;
 }
 
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_all) {
+	3: spriteset_electric_TRAXXF140MS2_green;
+    3: spriteset_electric_TRAXXF140MS2_red;
+    2: spriteset_electric_TRAXXF140MS2_silver;
+}
+
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_fyra) {
+	3: spriteset_electric_TRAXXF140MS2_red;
+    1: spriteset_electric_TRAXXF140MS2_silver;
+}
+
+
 switch(FEAT_TRAINS, SELF, switch_REV_electric_TRAXXF140MS2_randomlivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]){
 	0..2010: spriteset_electric_TRAXXF140MS2_green;
-    switch_electric_TRAXXF140MS2_random_all;
+    switch_REV_electric_TRAXXF140MS2_random_all;
 }
 
 switch(FEAT_TRAINS, SELF, switch_REV_electric_TRAXXF140MS2_purchaselivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]){
 	0..2010: spriteset_electric_TRAXXF140MS2_green;
-    switch_electric_TRAXXF140MS2_random_fyra;
+    switch_REV_electric_TRAXXF140MS2_random_fyra;
 }
 
 switch(FEAT_TRAINS, SELF, switch_rev_electric_TRAXXF140MS2_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
