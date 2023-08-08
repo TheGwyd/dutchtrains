@@ -65,7 +65,7 @@ switch(FEAT_TRAINS,SELF,sw_REV_id_check,[STORE_TEMP(position_in_consist_from_end
 	//item_electric_NS1600 :
 	item_electric_NS1700 : spriteset_electric_NS1600_yellow;
 	//item_electric_HLE11 :
-	//item_electric_HLE25 :
+	item_electric_HLE25 : spriteset_REV_electric_HLE25_5;
 	//item_electric_NS1600P :
 	//item_electric_TRAXXF140MS2 :
 	//item_electric_ES64F4 :
@@ -126,7 +126,7 @@ switch(FEAT_TRAINS,SELF,sw_REV_id_check,[STORE_TEMP(position_in_consist_from_end
 	//item_coaches_Bolkoprijtuigen :
 	//item_coaches_ICL :
 	//item_coaches_PlanD :
-	//item_coaches_PlanW :
+	item_coaches_PlanW : switch_rev_coaches_PlanW_livery;
 	//item_coaches_K4 :
 	//item_emu_ICM4 :
 	//item_emu_ICM3 :
